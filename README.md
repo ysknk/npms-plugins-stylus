@@ -34,7 +34,7 @@ npm run stylus -- --help
 
 ### ex) set options
 
-project root `.delrc.js`  
+project root `.stylusrc.js`  
 or  
-cli `npm run stylus -- -cwd "./test/" -src "**/[!_]*.js"
+cli `npm run stylus -- -cwd \"./test/before\" -src \"**/[!_]*.styl\" -dest \"./test/after/\" 
 `
