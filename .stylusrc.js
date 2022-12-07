@@ -12,7 +12,7 @@ export default {
   //       fs.mkdirSync(path.dirname(dest), { recursive: true })
   //       fs.writeFile(dest, css, (err, data) => {
   //         if (err) { throw err }
-  //         utils.message.success(`stylus: ${dest}`, {ptime: false})
+  //         utils.message.success(`${dest}`)
   //       })
   //     })
   // }
