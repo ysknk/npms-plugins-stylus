@@ -14,12 +14,16 @@ import utils from 'node-package-utilities'
 
 import argv from './lib/arguments.js'
 
+utils.time.initializeProcess()
+
 glob.sync(argv.src, {
   ignore: argv.ignore,
   cwd: argv.cwd
 }).map((key) => {
   const filename = key.replace(/\.[^/.]+$/, '')
-  const filepath = path.resolve(argv.cwd, `${key}`)
+  const filepath = path.resolve(argv.cwd, key)
+
+  utils.message.processing(filepath)
 
   fs.readFile(filepath, argv.enc, (err, data) => {
     if (err) { return }
@@ -37,6 +41,6 @@ glob.sync(argv.src, {
 
       data
     })
-  });
-});
+  })
+})
 
