@@ -1,4 +1,4 @@
-# glob-stylus
+# npms-plugins-stylus
 
 ## Description
 
@@ -12,7 +12,7 @@ stylusをcli化。globで複数ファイルを指定して書き出しできる�
 ## Install
 
 ```sh
-npm i -D https://github.com/ysknk/glob-stylus.git
+npm i -D https://github.com/ysknk/npms-plugins-stylus.git
 ```
 
 ## Usage
